@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Creating color extensions to plug in custom colors for the rings.
 extension Color {
     public static var outlineRed: Color {
         return Color(decimalRed: 34, green: 0, blue: 3)

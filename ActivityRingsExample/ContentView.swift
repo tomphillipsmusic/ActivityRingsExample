@@ -12,15 +12,18 @@ struct ContentView: View {
     @State private var firstRingProgress: CGFloat = 0.3
     @State private var secondRingProgress: CGFloat = 0.5
     @State private var thirdRingProgress: CGFloat = 0.8
+    let circleLineWidth: CGFloat = 20
 
     var body: some View {
         ZStack {
             Color.black
-            ActivityRingView(progress: $firstRingProgress, colors: [.darkRed, .lightRed], radius: 150, lineWidth: 30)
+            
+            /// The three circles are stacked in a ZStack. You can plug in whatever colors you need. Make sure to plug in the darker shade as the first color and the lighter shade as the second color. The radius of the circle will dicate how large it is and the line width will configure how thick the stroke of the circle is
+            ActivityRingView(progress: $firstRingProgress, gradientColors: [.darkRed, .lightRed], outlineColor: .outlineRed, radius: 150, lineWidth: circleLineWidth)
                 .fixedSize()
-            ActivityRingView(progress: $secondRingProgress, colors: [.darkRed, .lightRed], radius: 128, lineWidth: 30)
+            ActivityRingView(progress: $secondRingProgress, gradientColors: [.darkRed, .lightRed], outlineColor: .outlineRed, radius: 128, lineWidth: circleLineWidth)
                 .fixedSize()
-            ActivityRingView(progress: $thirdRingProgress, colors: [.darkRed, .lightRed], radius: 105, lineWidth: 30)
+            ActivityRingView(progress: $thirdRingProgress, gradientColors: [.darkRed, .lightRed], outlineColor: .outlineRed, radius: 105, lineWidth: circleLineWidth)
                 .fixedSize()
             
             // Button that increments the rings progress value (just a demo to show the animation)
