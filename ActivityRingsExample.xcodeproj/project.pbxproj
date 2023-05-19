@@ -11,6 +11,8 @@
 		3E210FF62A179F8D000FA523 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E210FF52A179F8D000FA523 /* ContentView.swift */; };
 		3E210FF82A179F8E000FA523 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E210FF72A179F8E000FA523 /* Assets.xcassets */; };
 		3E210FFB2A179F8E000FA523 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E210FFA2A179F8E000FA523 /* Preview Assets.xcassets */; };
+		3E2110022A17A11F000FA523 /* ActivityRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2110012A17A11F000FA523 /* ActivityRingView.swift */; };
+		3E2110042A17A142000FA523 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2110032A17A142000FA523 /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		3E210FF52A179F8D000FA523 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3E210FF72A179F8E000FA523 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E210FFA2A179F8E000FA523 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3E2110012A17A11F000FA523 /* ActivityRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRingView.swift; sourceTree = "<group>"; };
+		3E2110032A17A142000FA523 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				3E210FF32A179F8D000FA523 /* ActivityRingsExampleApp.swift */,
 				3E210FF52A179F8D000FA523 /* ContentView.swift */,
+				3E2110012A17A11F000FA523 /* ActivityRingView.swift */,
+				3E2110032A17A142000FA523 /* Color+Extension.swift */,
 				3E210FF72A179F8E000FA523 /* Assets.xcassets */,
 				3E210FF92A179F8E000FA523 /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				3E210FF62A179F8D000FA523 /* ContentView.swift in Sources */,
 				3E210FF42A179F8D000FA523 /* ActivityRingsExampleApp.swift in Sources */,
+				3E2110022A17A11F000FA523 /* ActivityRingView.swift in Sources */,
+				3E2110042A17A142000FA523 /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
