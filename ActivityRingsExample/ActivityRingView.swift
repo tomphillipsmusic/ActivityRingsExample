@@ -36,13 +36,13 @@ struct ActivityRingView: View {
             Circle()
                 .foregroundColor(gradientColors[0])
                 .frame(width: lineWidth, height: lineWidth)
-                .offset(y: -150)
+                .offset(y: -radius)
             
             // This represents the smaller circle at the end of the progress circle's arc
             Circle()
                 .frame(width: lineWidth, height: lineWidth)
                 .foregroundColor(progress > 0.95 ? gradientColors[1] : gradientColors[1].opacity(0))
-                .offset(y: -150)
+                .offset(y: -radius)
                 .rotationEffect(.degrees(360 * Double(progress)))
                 .shadow(color: progress > 0.96 ? .black.opacity(0.1): .clear, radius: 3, x: 4, y: 0)
         }
